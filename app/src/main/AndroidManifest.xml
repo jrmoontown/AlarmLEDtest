@@ -9,6 +9,11 @@
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
 
+    <uses-sdk android:minSdkVersion="8" />
+   //이거 안된다 uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
 
     <application
         android:allowBackup="true"
@@ -41,6 +46,7 @@
                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
             </intent-filter>
         </receiver>
+
         <receiver android:name=".AlarmReceiver" >
 
 
